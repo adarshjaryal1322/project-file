@@ -8,7 +8,251 @@
 
 ### SECTION - CE (A1)
 
-# PROGRAM NO 1 : PROGRAM TO FIND FACTORIAL OF A NUMBER 
+
+# PROGRAM NO 1 : PROGRAM TO PRINT WELCOME MESSAGE 
+
+ ` #include <stdio.h>`  
+   `void main ()`  
+  ` {`  
+     `puts ("Welcome Budding Engineers");`  
+   `}`  
+   
+   ## OUTPUT
+   
+   `Welcome Budding Engineers `
+   
+   
+   
+   # PROGRAM NO : 2 PROGRAM TO PRINT THE ADDRESS
+   
+  ` include <stdio.h>`  
+`void main ()`  
+`{`  
+`puts ("House Number : 111");`  
+`puts ("Street Number : 2");`  
+`puts ("XYZ Nagar ");`  
+`puts ("Patiala");`  
+`}`  
+
+## OUTPUT
+
+`House Number : 111`  
+`Street Number : 2`  
+`XYZ Nagar`   
+`Patiala`  
+
+# PROGRAM NO 3 : PROGRAM TO FIND THE SUM OF TWO NUMBERS 
+
+`#include <stdio.h>`  
+`int main ()`  
+`{`  
+`int a,b,c;`  
+`printf ("Enter first variable : ");`  
+`scanf ("%d",&a);`  
+`printf("Enter second variable : ");`  
+`scanf ("%d",&b);`  
+`c = a+b; `                                                
+`printf("Sum of two variables is : %d\n",c);`  
+`return 0;`                                                      
+`}`  
+
+## OUTPUT 
+
+`Enter first variable : 10`  
+`Enter second variable : 20`  
+`Sum of two variables is : 30`  
+
+# PROGRAM NO 4 : PROGRAM TO CONVERT TEMPERATURE FROM CELCIUS TO FAHRENHEIT
+
+`#include <stdio.h>`  
+`void main ()`                                                   
+`{`  
+`float num1,num2;`  
+`printf ("\nEnter value in centigrade:\n");`  
+`scanf ("%f",&num1);`  
+`num2 = (num1*9/5)+32;`  
+`printf ("\nValue in farenheit is :%.2f\n",num2 );`  
+`}`  
+
+## OUTPUT
+
+`Enter value in centigrade:`  
+`100`  
+
+`Value in farenheit is :212.00`  
+
+# PROGRAM NO 5 : PROGRAM TO FIND AREA AND PERIMETER OF A CIRCLE
+
+`#include <stdio.h>`  
+`int main ()`  
+`{`  
+`float radius,area, peri,pi=3.14 ;`  
+`printf("Enter radius of circle :");`  
+`scanf ("%f",&radius);`  
+`area=pi*radius*radius;`  
+`peri=2*pi*radius;`  
+`printf("Area of circle : %f,",area);`  
+`printf("Perimeter of circle : %f",peri);`  
+`return 0;`  
+`}`  
+
+## OUTPUT 
+
+`Enter radius of circle :5`  
+`Area of circle : 78.500000,Perimeter of circle : 31.400002`  
+
+# PROGRAM NO 6 : PROGRAM TO SWAP TWO NUMBERS WITHOUT USING THIRD VARIABLE 
+
+`#include <stdio.h>`  
+`int main ()`  
+`{ `                                                                  
+`int a,b;`  
+`printf ("\nEnter the  value of a :");`  
+`scanf ("%d",&a);`  
+`printf ("\nEnter the value of b :");`  
+`scanf ("%d",&b);`  
+`a=a+b;`   
+`b=a-b;`  
+`a=a-b;`  
+`printf ("\nThe swaped values of a : %d\n",a);`  
+`printf ("\nThe swaped value of b : %d \n",b);`  
+`return 0;`  
+`}`  
+
+## OUTPUT 
+`Enter the  value of a :10`  
+
+`Enter the value of b :20`  
+
+`The swaped values of a : 20`  
+
+`The swaped value of b : 10 `    
+
+# PROGRAM NO 7 : PROGRAM TO CHECK WHETHER THE NUMBER IS EVEN OR ODD
+
+`#include <stdio.h>`  
+`int oddeven(int num1);`  
+`int main ()`  
+`{`  
+`int s ;`  
+`printf ("Enter the integer:");`  
+`scanf ("%d",&s);`  
+`oddeven (s);`  
+`return 0;`  
+`}`  
+`int oddeven(int num1)`  
+`{`  
+`if (num1%2==0)`  
+`printf ("The number is even");`  
+`else`  
+`printf ("The number is odd:");`  
+`return 0;`  
+`}`  
+
+## OUTPUT 
+
+`Enter the integer:177`  
+`The number is odd` 
+
+# PROGRAM NO 8 : PROGRAM TO PRINT FIZZBUZZ
+
+`#include <stdio.h>`  
+`void main()`  
+`{`  
+`int a,i;`  
+`printf("enter the number ");`  
+`scanf("%d",&a);`  
+`for(i=1;i<=a;i++)`  
+`{ if (i%15==0)`  
+`printf("fizzbuzz\n");`  
+`else if(i%5==0)`  
+`printf("buzz\n");`  
+`else if(i%3==0)`  
+`printf("fizz\n");`  
+`else`  
+`printf("%d\n",i);`  
+`}`  
+`return 0;`  
+`}`  
+
+## OUTPUT 
+
+`enter number 30`  
+`1`  
+`2`  
+`fizz`  
+`4`  
+`buzz`  
+`fizz`  
+`7`  
+`8`  
+`fizz`  
+`buzz`  
+`11`  
+`fizz`  
+`13`   
+`14`  
+`fizzbuzz`  
+`16`  
+`17`  
+`fizz`  
+`19`  
+`buzz`  
+`fizz`  
+`22`  
+`23`  
+`fizz`  
+`buzz`  
+`26`  
+`fizz`  
+`28`  
+`29`  
+`fizzbuzz`  
+
+# PROGRAM NO 9 : PROGRAM TO PRINT DAYS OF A WEEK 
+
+`#include <stdio.h>`  
+`int main ()`  
+`{`  
+`int day;`  
+`printf ("Enter the number of day (Consider Monday = 1 and Sunday = 7) : ");`  
+`scanf ("%d",&day);`  
+`switch (day)`  
+`{`  
+`case 1:`  
+`printf ("\nToday is Monday\n ");`  
+`break;`  
+`case 2:`  
+`printf  ("\nToday is Tuesday\n");`  
+`break;`  
+`case 3:`  
+`printf ("\nToday is Wednesday\n");`  
+`break;`              
+`case 4:`  
+`printf("\nToday is Thursday\n");`   
+`break;`  
+`case 5:`  
+`printf ("\nToday is Friday\n");`  
+`break ;`  
+`case 6:`  
+`printf ("\nToday is Saturday\n");`  
+`break;`  
+`case 7:`  
+`printf("\nToday is Sunday\n");`  
+`break;`  
+`default :`  
+`printf ("Please Enter a valid number ");`  
+`}`  
+`return 0;`  
+`}`  
+
+## OUTPUT 
+
+`Enter the number of day (Consider Monday = 1 and Sunday = 7) : 3`  
+
+`Today is Wednesday`
+
+# PROGRAM NO 10 : PROGRAM TO FIND FACTORIAL OF A NUMBER 
 
 `#include <stdio.h>`  
 `void main()`  
@@ -26,7 +270,7 @@
 `enter i : 5`  
 `factorial of i is 120`  
 
-# PROGRAM NO 2 : PROGRAM TO CHECK WHETHER A NUMBER IS PRIME OR NOT 
+# PROGRAM NO 11 : PROGRAM TO CHECK WHETHER A NUMBER IS PRIME OR NOT 
 
 `#include <stdio.h>`  
 `int main ()` 
@@ -62,7 +306,7 @@
 `235 is not a prime number`  
 
 
-# PROGRAM NO 3 : PROGRAM TO DISPLAY SERIES AND FIND SUM OF 1+1/2+1/3+.....+1/n
+# PROGRAM NO 12 : PROGRAM TO DISPLAY SERIES AND FIND SUM OF 1+1/2+1/3+.....+1/n
 `#include<stdio.h>`  
 `int main()`  
 `{`  
@@ -84,7 +328,7 @@
    `01 + 1/2 + 1/3 + 1/4 + 1/5 + 1/6 + 1/7`  
 
 
-# PROGRAM NO 4 : PROGRAM TO DISPLAY SERIES AND FIND SUM OF 1+3+5+....+n
+# PROGRAM NO 13 : PROGRAM TO DISPLAY SERIES AND FIND SUM OF 1+3+5+....+n
 `#include<stdio.h>`   
  
 `void main()`  
@@ -109,7 +353,7 @@
   `Sum=16`
   
   
-  # PROGRAM NO 5 : PROGRAM TO SHOW SUM OF 10 ELEMENTS OF ARRAY AND SHOW THE AVERAGE
+  # PROGRAM NO 14 : PROGRAM TO SHOW SUM OF 10 ELEMENTS OF ARRAY AND SHOW THE AVERAGE
   
   `#include <stdio.h>`  
 
@@ -149,7 +393,7 @@
   `Average=4.22`  
   
   
-  # PROGRAM NO 6 : PROGRAM TO FIND THE MAXIMUM NUMBER IN AN ARRAY
+  # PROGRAM NO 15 : PROGRAM TO FIND THE MAXIMUM NUMBER IN AN ARRAY
   `#include <stdio.h>`  
 `int main()`  
 `{`  
@@ -178,7 +422,7 @@
   `Maximum number=7`  
   
   
-  # PROGRAM NO 7:-PROGRAM TO PRINT A MATRIX
+  # PROGRAM NO 16 :-PROGRAM TO PRINT A MATRIX
 
 `#include <stdio.h>`  
 `int main ()`  
@@ -221,7 +465,7 @@
 `12      34`  
 `65      77`  
 
-# PROGRAM NO 8:-PROGRAM TO ADD TWO MATRIX
+# PROGRAM NO 17 :-PROGRAM TO ADD TWO MATRIX
 
 `#include <stdio.h>`  
 `int main ()`  
@@ -274,7 +518,7 @@
 `34      100`  
 `131     29`  
 
-# PROGRAM NO 9:-PROGRAM TO TRANSPOSE A MATRIX
+# PROGRAM NO 18 :-PROGRAM TO TRANSPOSE A MATRIX
 
 `#include <stdio.h>`  
  
@@ -330,7 +574,7 @@
 ` 9 5 4`
 
 
-  # PROGRAM NO 10 :-PROGRAM TO SUBTRACT TWO MATRIX
+# PROGRAM NO 19 :-PROGRAM TO SUBTRACT TWO MATRIX
 `#include <stdio.h>`  
 `int main ()`  
 `{`  
@@ -381,7 +625,8 @@
 `121     23`  
 `37      22`  
 
-# PROGRAM NO 11:- PROGRAM TO MULTIPLY TWO MATRIX  
+
+# PROGRAM NO 20:- PROGRAM TO MULTIPLY TWO MATRIX  
 
 `#include<stdio.h>`  
 `void main()`  
@@ -466,7 +711,7 @@
 `18  18  18` 
 
 
-   # PROGRAM NO 12 : PROGRAM TO FIND TRANSPOSE OF A MATRIX
+   # PROGRAM NO 21 : PROGRAM TO FIND TRANSPOSE OF A MATRIX
    `#include <stdio.h>`  
    `void main()`  
 `{`  
@@ -517,7 +762,7 @@
      `5 1 3`  
      
      
- # PROGRAM NO 13 : PROGRAM TO SHOW INPUT AND OUTPUT OF A STRING
+ # PROGRAM NO 22 : PROGRAM TO SHOW INPUT AND OUTPUT OF A STRING
      `#include<stdio.h>`  
   `#include<conio.h>`    
 `void main()`  
@@ -536,7 +781,7 @@
  `hi everyone`  
  
  
- # PROGRAM NO 14 : PROGRAM TO FIND SQUARE OF A NUMBER USING FUNCTIONS
+ # PROGRAM NO 23 : PROGRAM TO FIND SQUARE OF A NUMBER USING FUNCTIONS
  `#include<stdio.h>`  
  `#include<conio.h>`  
  `void main()`  
@@ -560,7 +805,7 @@
  `square is: 25`  
  
  
- # PROGRAM NO 15 : PROGRAM TO SWAP TWO NUMBERS 
+ # PROGRAM NO 24 : PROGRAM TO SWAP TWO NUMBERS 
  
  `#include<stdio.h>`  
 
